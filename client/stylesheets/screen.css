@@ -111,9 +111,9 @@ html, body, .outer-wrapper {
   height: 100%; }
 
 /* line 4, ../sass/partials/_main.scss */
-body {
-  background: #e0f1f7; }
-
+/*body {
+  background: #e0f1f7; }*/
+html{background-image:url('//goodeggs-1.a.ssl.fastly.net/img/jujube/background-texture.50cf93ba.png')}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
   /* line 9, ../sass/partials/_main.scss */
   body {
@@ -172,7 +172,8 @@ body {
 /* line 1, ../sass/partials/_typography.scss */
 body, textarea, input, button, input[type="submit"], input[type="button"] {
   font-family: "Open Sans", "Proxima Nova Soft", "proxima-nova-soft", "PT SANS", "Helvetica Neue", Helvetica, sans-serif;
-  color: #4a4444;
+  color: #fff;
+  
   line-height: 1.6; }
 
 /* line 9, ../sass/partials/_typography.scss */
@@ -189,7 +190,8 @@ a {
 /* line 19, ../sass/partials/_typography.scss */
 h2 {
   font-size: 36px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;}
+  
 
 /* line 23, ../sass/partials/_typography.scss */
 h3 {

@@ -1,7 +1,7 @@
 // Session variables
 Session.set('initialLoad', true);
 Session.set('today', new Date());
-Session.set('view', 'top');
+Session.set('top', 'view');
 Session.set('postsLimit', getSetting('postsPerPage', 10));
 Session.set('settingsLoaded', false);
 Session.set('sessionId', Meteor.default_connection._lastSessionId);
