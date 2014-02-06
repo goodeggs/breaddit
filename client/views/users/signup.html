@@ -1,7 +1,6 @@
 <template name="signup">
   <div class="grid-small grid-block dialog signup">
     <h2>Sign Up</h2>
-    </div>
     <div class="regular-signup regular-auth">
       <form>
         <div class="control-group">
@@ -9,7 +8,7 @@
           <div class="controls"><input id="username" name="username" type="text" value="" /></div>
         </div>
         <div class="control-group">
-          <label>{{i18n "Email"}}</label>
+          <label>{{i18n "Good Eggs Email"}}</label>
           <div class="controls"><input id="email" name="email" type="text" value="" /></div>
         </div>
         <div class="control-group">
@@ -18,9 +17,10 @@
         </div>
         <div class="form-actions">
           <input type="submit" class="button" value="{{i18n "Sign Up"}}" />
-        </div>  
+        </div>
       </form>
     </div>
   </div>
   <p class="grid-small footer-notice">{{i18n "Already have an account?"}} <a href="signin" id="signin">{{i18n "Sign in!"}}</a></p>
 </template>
+

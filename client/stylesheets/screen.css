@@ -172,7 +172,7 @@ html{background-image:url('//goodeggs-1.a.ssl.fastly.net/img/jujube/background-t
 /* line 1, ../sass/partials/_typography.scss */
 body, textarea, input, button, input[type="submit"], input[type="button"] {
   font-family: "Open Sans", "Proxima Nova Soft", "proxima-nova-soft", "PT SANS", "Helvetica Neue", Helvetica, sans-serif;
-  color: #fff;
+  color: #4a4444;
   
   line-height: 1.6; }
 
@@ -919,59 +919,74 @@ body.pageslide-open {
     font-size: 30px;
     color: rgba(0, 0, 0, 0.1); }
   /* line 45, ../sass/modules/_posts.scss */
-  .post-content .post-upvote {
+  
+  .post-content .post-actionss {
     position: absolute;
-    top: 0px;
-    bottom: 0px; }
-    /* line 49, ../sass/modules/_posts.scss */
-    .post-content .post-upvote .upvote-link {
-      height: 100%;
-      display: table;
-      float: left;
+    left: 0px;
+    top: 0px; }
+    /* line 176, ../sass/modules/_comments.scss */
+    .post-actionss a {
+      -webkit-border-radius: 0 0 0 3px;
+      -moz-border-radius: 0 0 0 3px;
+      -ms-border-radius: 0 0 0 3px;
+      -o-border-radius: 0 0 0 3px;
+      border-radius: 0 0 0 3px;
+      position: relative;
+      display: block;
+      height: 35px;
       width: 30px;
-      -webkit-border-radius: 3px 0 0 3px;
-      -moz-border-radius: 3px 0 0 3px;
-      -ms-border-radius: 3px 0 0 3px;
-      -o-border-radius: 3px 0 0 3px;
-      border-radius: 3px 0 0 3px;
-      border-right: 1px solid #e7eff2; }
-      /* line 59, ../sass/modules/_posts.scss */
-      .post-content .post-upvote .upvote-link i {
+      background: white;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+      /* line 188, ../sass/modules/_comments.scss */
+      .post-actionss a.upvote {
+        -webkit-border-radius: 3px 0 0 0;
+        -moz-border-radius: 3px 0 0 0;
+        -ms-border-radius: 3px 0 0 0;
+        -o-border-radius: 3px 0 0 0;
+        border-radius: 3px 0 0 0;
+        margin-bottom: 1px; }
+      /* line 192, ../sass/modules/_comments.scss */
+      .post-actionss a i {
         font-size: 12px;
-        display: table-cell;
-        height: 100%;
-        width: 100%;
+        display: block;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
         text-align: center;
-        vertical-align: middle;
-        color: #92b5c3;
-        color: #f36c3d;
-        text-shadow: 0px 1px 0px white; }
-        /* line 70, ../sass/modules/_posts.scss */
-        .post-content .post-upvote .upvote-link i.icon-check {
-          display: none; }
-      /* line 74, ../sass/modules/_posts.scss */
-      .post-content .post-upvote .upvote-link span {
-        display: none; }
-      /* line 77, ../sass/modules/_posts.scss */
-      .post-content .post-upvote .upvote-link.not-voted:hover {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        background: #4e555d url("/img/bg-header.png") top center; }
-        /* line 80, ../sass/modules/_posts.scss */
-        .post-content .post-upvote .upvote-link.not-voted:hover i {
-          color: white;
-          text-shadow: none; }
-      /* line 85, ../sass/modules/_posts.scss */
-      .post-content .post-upvote .upvote-link.voted {
-        cursor: default; }
-        /* line 87, ../sass/modules/_posts.scss */
-        .post-content .post-upvote .upvote-link.voted i.icon-up {
-          display: none; }
-        /* line 90, ../sass/modules/_posts.scss */
-        .post-content .post-upvote .upvote-link.voted i.icon-check {
-          color: #7ac0e4;
-          display: table-cell; }
+        text-indent: 0;
+        color: #f36c3d; }
+      /* line 204, ../sass/modules/_comments.scss */
+      .post-actionss a:hover {
+        background: #4e555d; }
+        /* line 206, ../sass/modules/_comments.scss */
+        .post-actionss a:hover i {
+          color: white; }
+    /* line 211, ../sass/modules/_comments.scss */
+    .post-actionss.upvoted .upvote, .post-actionss.downvoted .downvote {
+      cursor: default; }
+      /* line 213, ../sass/modules/_comments.scss */
+      .post-actionss.upvoted .upvote i, .post-actionss.downvoted .downvote i {
+        color: #7ac0e4; }
+      /* line 216, ../sass/modules/_comments.scss */
+      .post-actionss.upvoted .upvote:hover, .post-actionss.downvoted .downvote:hover {
+        background: white; }
+    /* line 220, ../sass/modules/_comments.scss */
+    .post-actionss.downvoted .upvote, .post-actionss.upvoted .downvote {
+      cursor: default; }
+      /* line 222, ../sass/modules/_comments.scss */
+      .post-actionss.downvoted .upvote i, .post-actionss.upvoted .downvote i {
+        color: #b3c1c6; }
+      /* line 225, ../sass/modules/_comments.scss */
+      .post-actionss.downvoted .upvote:hover, .post-actionss.upvoted .downvote:hover {
+        background: white; }
+  
   /* line 97, ../sass/modules/_posts.scss */
   .post-content .post-sticky {
     display: block;
@@ -1594,13 +1609,13 @@ input[type="submit"], button, .button, .auth-buttons #login-buttons #login-butto
     display: inline-block; }
 
 /* line 121, ../sass/modules/_forms.scss */
-.twitter-signup {
+/*.twitter-signup {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #dfdbdb; }
+  border-bottom: 1px solid #dfdbdb; }*/
   /* line 125, ../sass/modules/_forms.scss */
-  .twitter-signup .twitter-button {
-    background: #00aced; }
+  /*.twitter-signup .twitter-button {
+    background: #00aced; }*/
 
 /* line 129, ../sass/modules/_forms.scss */
 .category-slug {
