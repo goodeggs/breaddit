@@ -5,9 +5,6 @@
 
 backbone
 accounts-base
-accounts-ui
-accounts-password
-accounts-twitter
 spiderable
 email
 database-forms
@@ -20,3 +17,7 @@ mailchimp
 nprogress
 telescope-i18n
 fast-render
+accounts-google
+less
+accounts-ui
+accounts-password

@@ -1,3 +1,5 @@
+Accounts.config({restrictCreationByEmailDomain: 'goodeggs.com'});
+
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_AND_EMAIL'
 });
@@ -37,3 +39,7 @@ Statuses={
 	approved: 2,
 	rejected: 3
 };
+
+Deps.autorun(function(){
+  Meteor.subscribe('myuserData');
+});

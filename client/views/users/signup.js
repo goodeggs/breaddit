@@ -3,11 +3,28 @@ Template.signup.events({
       event.preventDefault();
       var username = $('#username').val();
       var email = $('#email').val();
+		//var email = email.split('@').slice(1);
+		//var allowedDomains = ['goodeggs.com'];
+	
       var password = $('#password').val();
       if(!username || !email || !password){
-        throwError(i18n.t('Please fill in all fields'));
+        throwError(i18n.t('Please use goodeggs email'));
         return false;
       }
+
+		/*$('button').on('click', function(){
+		    str = $('input').val();
+		    str = str.split('@').slice(1);
+    
+		    var allowedDomains = [ 'steve.com', 'Pete.com', 'jack.com', 'John.com' ];
+    
+		    if ($.inArray(str[0], allowedDomains) !== -1) {
+		        alert(str + ' is allowed');
+		    }else{
+		        alert('not allowed');
+		    }(!username || !email || !password)*/
+
+		
       Accounts.createUser({
           username: username
         , email: email  

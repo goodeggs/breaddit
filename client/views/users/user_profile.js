@@ -16,8 +16,8 @@ Template.user_profile.helpers({
   inviteCount: function() {
     return Meteor.user().inviteCount;
   },
-  getTwitterName: function () {
-    return getTwitterName(this);
+  getGoogleName: function () {
+    return getGoogleName(this);
   },
   getGitHubName: function () {
     return getGitHubName(this);

@@ -1,13 +1,23 @@
+Accounts.config({restrictCreationByEmailDomain: 'goodeggs.com'});
+
+
+
 Accounts.onCreateUser(function(options, user){
+	
+	
   var userProperties = {
     profile: options.profile || {},
     karma: 0,
-    isInvited: false,
+    isInvited: true,
     isAdmin: false,
     postCount: 0,
     commentCount: 0,
-    invitedCount: 0
+    invitedCount: 0,
+	
+	 
   }
+
+  
   user = _.extend(user, userProperties);
 
   if (options.email)
@@ -61,6 +71,7 @@ Accounts.onCreateUser(function(options, user){
 
 
   return user;
+
 });
 
 getEmailHash = function(user){

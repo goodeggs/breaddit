@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,38 +24,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -128,20 +129,17 @@ html{background-image:url('//goodeggs-1.a.ssl.fastly.net/img/jujube/background-t
 
 /* line 20, ../sass/partials/_main.scss */
 #spinner {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1000; }
+  margin: 100px 0; }
 
-/* line 26, ../sass/partials/_main.scss */
+/* line 23, ../sass/partials/_main.scss */
 .debug {
   display: none; }
 
-/* line 29, ../sass/partials/_main.scss */
+/* line 26, ../sass/partials/_main.scss */
 .hidden {
   display: none; }
 
-/* line 32, ../sass/partials/_main.scss */
+/* line 29, ../sass/partials/_main.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -150,22 +148,22 @@ html{background-image:url('//goodeggs-1.a.ssl.fastly.net/img/jujube/background-t
   width: 100%;
   z-index: 50; }
 
-/* line 40, ../sass/partials/_main.scss */
+/* line 37, ../sass/partials/_main.scss */
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
   padding: 10px 0 70px 0;
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px; }
-  /* line 46, ../sass/partials/_main.scss */
+  /* line 43, ../sass/partials/_main.scss */
   .footer.absolute {
     position: absolute; }
 
-/* line 50, ../sass/partials/_main.scss */
+/* line 47, ../sass/partials/_main.scss */
 #login-buttons .loading {
   display: none; }
 
-/* line 53, ../sass/partials/_main.scss */
+/* line 50, ../sass/partials/_main.scss */
 #loading {
   height: 300px; }
 
@@ -173,7 +171,6 @@ html{background-image:url('//goodeggs-1.a.ssl.fastly.net/img/jujube/background-t
 body, textarea, input, button, input[type="submit"], input[type="button"] {
   font-family: "Open Sans", "Proxima Nova Soft", "proxima-nova-soft", "PT SANS", "Helvetica Neue", Helvetica, sans-serif;
   color: #4a4444;
-  
   line-height: 1.6; }
 
 /* line 9, ../sass/partials/_typography.scss */
@@ -190,8 +187,7 @@ a {
 /* line 19, ../sass/partials/_typography.scss */
 h2 {
   font-size: 36px;
-  margin-bottom: 10px;}
-  
+  margin-bottom: 10px; }
 
 /* line 23, ../sass/partials/_typography.scss */
 h3 {
@@ -461,7 +457,7 @@ body.pageslide-open {
   -moz-border-radius: 4px;
   border-radius: 4px;
     /*.dow {
-    border-top:1px solid #ddd !important;
+border-top:1px solid #ddd !important;
 }
 */ }
 
@@ -815,13 +811,13 @@ body.pageslide-open {
     padding-left: 4px;
     padding-right: 4px;
     margin-right: 10px; }
-    /* line 48, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 48, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .nav > li:first-child, .nav > li.first {
       padding-left: 0; }
-    /* line 49, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 49, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .nav > li:last-child {
       padding-right: 0; }
-    /* line 50, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 50, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .nav > li.last {
       padding-right: 0; }
     /* line 140, ../sass/modules/_header.scss */
@@ -849,17 +845,19 @@ body.pageslide-open {
     border-radius: 20px;
     border: 0px;
     width: 100px;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
     background: white; }
-    /* line 168, ../sass/modules/_header.scss */
+    /* line 170, ../sass/modules/_header.scss */
     .search .search-field:focus {
       outline: none; }
-  /* line 173, ../sass/modules/_header.scss */
+  /* line 175, ../sass/modules/_header.scss */
   .search.empty .search-field {
     background: rgba(255, 255, 255, 0.1); }
-    /* line 175, ../sass/modules/_header.scss */
+    /* line 177, ../sass/modules/_header.scss */
     .search.empty .search-field:focus {
       background: white; }
-  /* line 179, ../sass/modules/_header.scss */
+  /* line 181, ../sass/modules/_header.scss */
   .search.empty .search-clear {
     display: none; }
 
@@ -919,74 +917,59 @@ body.pageslide-open {
     font-size: 30px;
     color: rgba(0, 0, 0, 0.1); }
   /* line 45, ../sass/modules/_posts.scss */
-  
-  .post-content .post-actionss {
+  .post-content .post-upvote {
     position: absolute;
-    left: 0px;
-    top: 0px; }
-    /* line 176, ../sass/modules/_comments.scss */
-    .post-actionss a {
-      -webkit-border-radius: 0 0 0 3px;
-      -moz-border-radius: 0 0 0 3px;
-      -ms-border-radius: 0 0 0 3px;
-      -o-border-radius: 0 0 0 3px;
-      border-radius: 0 0 0 3px;
-      position: relative;
-      display: block;
-      height: 35px;
+    top: 0px;
+    bottom: 0px; }
+    /* line 49, ../sass/modules/_posts.scss */
+    .post-content .post-upvote .upvote-link {
+      height: 100%;
+      display: table;
+      float: left;
       width: 30px;
-      background: white;
-      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-      overflow: hidden;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden; }
-      /* line 188, ../sass/modules/_comments.scss */
-      .post-actionss a.upvote {
-        -webkit-border-radius: 3px 0 0 0;
-        -moz-border-radius: 3px 0 0 0;
-        -ms-border-radius: 3px 0 0 0;
-        -o-border-radius: 3px 0 0 0;
-        border-radius: 3px 0 0 0;
-        margin-bottom: 1px; }
-      /* line 192, ../sass/modules/_comments.scss */
-      .post-actionss a i {
+      -webkit-border-radius: 3px 0 0 3px;
+      -moz-border-radius: 3px 0 0 3px;
+      -ms-border-radius: 3px 0 0 3px;
+      -o-border-radius: 3px 0 0 3px;
+      border-radius: 3px 0 0 3px;
+      border-right: 1px solid #e7eff2; }
+      /* line 59, ../sass/modules/_posts.scss */
+      .post-content .post-upvote .upvote-link i {
         font-size: 12px;
-        display: block;
-        position: absolute;
-        height: 30px;
-        width: 30px;
-        line-height: 30px;
+        display: table-cell;
+        height: 100%;
+        width: 100%;
         text-align: center;
-        text-indent: 0;
-        color: #f36c3d; }
-      /* line 204, ../sass/modules/_comments.scss */
-      .post-actionss a:hover {
-        background: #4e555d; }
-        /* line 206, ../sass/modules/_comments.scss */
-        .post-actionss a:hover i {
-          color: white; }
-    /* line 211, ../sass/modules/_comments.scss */
-    .post-actionss.upvoted .upvote, .post-actionss.downvoted .downvote {
-      cursor: default; }
-      /* line 213, ../sass/modules/_comments.scss */
-      .post-actionss.upvoted .upvote i, .post-actionss.downvoted .downvote i {
-        color: #7ac0e4; }
-      /* line 216, ../sass/modules/_comments.scss */
-      .post-actionss.upvoted .upvote:hover, .post-actionss.downvoted .downvote:hover {
-        background: white; }
-    /* line 220, ../sass/modules/_comments.scss */
-    .post-actionss.downvoted .upvote, .post-actionss.upvoted .downvote {
-      cursor: default; }
-      /* line 222, ../sass/modules/_comments.scss */
-      .post-actionss.downvoted .upvote i, .post-actionss.upvoted .downvote i {
-        color: #b3c1c6; }
-      /* line 225, ../sass/modules/_comments.scss */
-      .post-actionss.downvoted .upvote:hover, .post-actionss.upvoted .downvote:hover {
-        background: white; }
-  
+        vertical-align: middle;
+        color: #92b5c3;
+        color: #f36c3d;
+        text-shadow: 0px 1px 0px white; }
+        /* line 70, ../sass/modules/_posts.scss */
+        .post-content .post-upvote .upvote-link i.icon-check {
+          display: none; }
+      /* line 74, ../sass/modules/_posts.scss */
+      .post-content .post-upvote .upvote-link span {
+        display: none; }
+      /* line 77, ../sass/modules/_posts.scss */
+      .post-content .post-upvote .upvote-link.not-voted:hover {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: #4e555d url("/img/bg-header.png") top center; }
+        /* line 80, ../sass/modules/_posts.scss */
+        .post-content .post-upvote .upvote-link.not-voted:hover i {
+          color: white;
+          text-shadow: none; }
+      /* line 85, ../sass/modules/_posts.scss */
+      .post-content .post-upvote .upvote-link.voted {
+        cursor: default; }
+        /* line 87, ../sass/modules/_posts.scss */
+        .post-content .post-upvote .upvote-link.voted i.icon-up {
+          display: none; }
+        /* line 90, ../sass/modules/_posts.scss */
+        .post-content .post-upvote .upvote-link.voted i.icon-check {
+          color: #7ac0e4;
+          display: table-cell; }
   /* line 97, ../sass/modules/_posts.scss */
   .post-content .post-sticky {
     display: block;
@@ -1048,6 +1031,19 @@ body.pageslide-open {
 .post-actions {
   float: right;
   padding: 0; }
+  
+  
+  .post-actions .user-avatar {
+    height: 80px;
+    width: 80px;
+    display: block;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    border-radius: 80px; }
+  
+  
   /* line 153, ../sass/modules/_posts.scss */
   .post-actions li {
     position: relative;
@@ -1609,13 +1605,13 @@ input[type="submit"], button, .button, .auth-buttons #login-buttons #login-butto
     display: inline-block; }
 
 /* line 121, ../sass/modules/_forms.scss */
-/*.twitter-signup {
+.twitter-signup {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #dfdbdb; }*/
+  border-bottom: 1px solid #dfdbdb; }
   /* line 125, ../sass/modules/_forms.scss */
-  /*.twitter-signup .twitter-button {
-    background: #00aced; }*/
+  .twitter-signup .twitter-button {
+    background: #00aced; }
 
 /* line 129, ../sass/modules/_forms.scss */
 .category-slug {
@@ -1627,7 +1623,7 @@ input[type="submit"], button, .button, .auth-buttons #login-buttons #login-butto
 /* line 135, ../sass/modules/_forms.scss */
 .ui-autocomplete {
   background: white;
-  width: 200px!important;
+  width: 200px !important;
   padding: 10px;
   font-size: 14px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);

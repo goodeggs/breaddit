@@ -21,7 +21,7 @@ serveAPI = function(limitSegment){
     if(post.url)
       properties['domain'] = getDomain(url);
 
-    if(twitterName = getTwitterNameById(post.userId))
+    if(twitterName = getGoogleNameById(post.userId))
       properties['twitterName'] = twitterName;
 
     posts.push(properties);
