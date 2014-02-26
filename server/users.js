@@ -131,3 +131,5 @@ Meteor.methods({
     addToMailChimpList(Meteor.user());
   }
 });
+
+

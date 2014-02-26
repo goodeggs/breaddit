@@ -17,7 +17,7 @@ mailchimp
 nprogress
 telescope-i18n
 fast-render
-accounts-google
 less
-accounts-ui
 accounts-password
+accounts-google
+accounts-ui

@@ -1,19 +1,8 @@
-Telescope is an open-source, real-time social news site built with [Meteor](http://meteor.com)
-
-**Note:** Telescope is beta software. Most of it should work but it's still a little unpolished and you'll probably find some bugs. Use at your own risk :)
-
-# Learn More
-- [Telescope Site](http://telesc.pe)
-- [Telescope Demo](http://demo.telesc.pe)
-- [Telescope Meta](http://meta.telesc.pe/) – Discussions about Telescope
-- [Telescope Wiki](https://github.com/SachaG/Telescope/wiki)
-
-# License
-- Telescope is distributed under the [MIT License](http://opensource.org/licenses/MIT)
+Open-source, real-time social news site built with [Meteor](http://meteor.com)
 
 # Features
 - Real-time (of course!)
-- Password-based and/or Twitter auth
+- Password-based and/or Google auth
 - Notifications
 - Mobile-ready & responsive
 - Invite-only access for reading and/or posting
@@ -23,16 +12,13 @@ Telescope is an open-source, real-time social news site built with [Meteor](http
 # Installation
 - Install [Meteor](http://meteor.com)
 - Install [Meteorite](https://github.com/oortcloud/meteorite/)
-- Download or clone Telescope into /some/path
+- Download or clone Tele into /some/path
 - cd /some/path
 - Run `mrt`
 
-# Hosting Telescope
-
-I recommend using either Meteor's own free hosting service, or checking out [Modulus](http://modulus.io/). 
 
 # First Run
-- Fill in your Twitter keys (by clicking on "Sign Up/Sign in" in your Telescope top bar)
+- Fill in your Google keys (by clicking on "Sign Up/Sign in" in your Telescope top bar)
 - The first user account created will automatically be made admin
 - Check out the settings page and fill out basic things like the site's name
 

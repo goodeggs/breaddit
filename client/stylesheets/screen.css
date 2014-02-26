@@ -1023,7 +1023,7 @@ border-top:1px solid #ddd !important;
         color: white; }
   /* line 144, ../sass/modules/_posts.scss */
   .post-content .post-meta {
-    font-size: 13px;
+    font-size: 12px;
     color: #b3c1c6;
     line-height: 1.5; }
 
@@ -1118,9 +1118,9 @@ border-top:1px solid #ddd !important;
 
 /* line 227, ../sass/modules/_posts.scss */
 .post-message {
-  padding: 20px;
+  padding: 12px;
   margin-bottom: 10px;
-  font-size: 18px; }
+  font-size: 16px; }
   /* line 232, ../sass/modules/_posts.scss */
   .list .post-message {
     display: none; }

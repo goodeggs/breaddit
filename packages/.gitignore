@@ -17,3 +17,6 @@ i18next-meteor
 /nprogress
 /fast-render
 /accounts-ui-bootstrap-dropdown
+/server-session
+/accounts-ui
+/accounts-ui-unstyled
