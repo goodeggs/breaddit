@@ -20,3 +20,5 @@ i18next-meteor
 /server-session
 /accounts-ui
 /accounts-ui-unstyled
+/accounts-ui-bootstrap-3
+/bootstrap-3

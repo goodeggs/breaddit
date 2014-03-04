@@ -16,8 +16,8 @@ iron-router
 mailchimp
 nprogress
 telescope-i18n
-fast-render
 less
 accounts-password
 accounts-google
-accounts-ui
+fast-render
+accounts-ui-bootstrap-3

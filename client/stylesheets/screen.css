@@ -672,7 +672,7 @@ border-top:1px solid #ddd !important;
   background: #4e555d url("/img/bg-header.png") top center;
   background-color: #4e555d;
   margin-bottom: 10px;
-  height: 70px;
+  height: 60px;
   position: relative;
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
@@ -762,7 +762,7 @@ border-top:1px solid #ddd !important;
     .auth-buttons #login-buttons #login-buttons-password {
       float: none !important;
       text-shadow: none;
-      width: auto;
+      width: 50px;
       line-height: 1.5;
       height: 26px;
       margin: 10px 0 !important; }
@@ -774,9 +774,7 @@ border-top:1px solid #ddd !important;
       cursor: pointer;
       color: white; }
       /* line 116, ../sass/modules/_header.scss */
-      .auth-buttons #login-buttons .login-header:before {
-        color: rgba(255, 255, 255, 0.5);
-        content: "Welcome, "; }
+
     /* line 121, ../sass/modules/_header.scss */
     .auth-buttons #login-buttons #login-buttons-logout {
       color: white;
@@ -902,7 +900,7 @@ border-top:1px solid #ddd !important;
   margin-right: 160px; }
   /* line 28, ../sass/modules/_posts.scss */
   .post-content .post-info {
-    padding: 13px 15px;
+    padding: 5px 15px;
     margin-left: 30px; }
   /* line 32, ../sass/modules/_posts.scss */
   .post-content .post-rank {
@@ -921,9 +919,17 @@ border-top:1px solid #ddd !important;
     position: absolute;
     top: 0px;
     bottom: 0px; }
+	 
+    .post-content .post-downvote {
+      position: absolute;
+      bottom: 0px; }
+		
+		.post-content .post-upvote {
+			 border-right: 1px solid #e7eff2;
+		}
     /* line 49, ../sass/modules/_posts.scss */
     .post-content .post-upvote .upvote-link {
-      height: 100%;
+      height: 40%;
       display: table;
       float: left;
       width: 30px;
@@ -932,7 +938,20 @@ border-top:1px solid #ddd !important;
       -ms-border-radius: 3px 0 0 3px;
       -o-border-radius: 3px 0 0 3px;
       border-radius: 3px 0 0 3px;
-      border-right: 1px solid #e7eff2; }
+       }
+		
+      .post-content .post-downvote .downvote-link {
+        height: 60%;
+        display: table;
+        float: left;
+        width: 30px;
+        -webkit-border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        -ms-border-radius: 3px 0 0 3px;
+        -o-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+		  
+         }
       /* line 59, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link i {
         font-size: 12px;
@@ -940,29 +959,56 @@ border-top:1px solid #ddd !important;
         height: 100%;
         width: 100%;
         text-align: center;
-        vertical-align: middle;
+        vertical-align: top;
         color: #92b5c3;
         color: #f36c3d;
         text-shadow: 0px 1px 0px white; }
+		  
+        .post-content .post-downvote .downvote-link i {
+          font-size: 12px;
+          display: table-cell;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          vertical-align: bottom;
+          color: #92b5c3;
+          color: #f36c3d;
+          text-shadow: 0px 1px 0px white; }
         /* line 70, ../sass/modules/_posts.scss */
         .post-content .post-upvote .upvote-link i.icon-check {
           display: none; }
       /* line 74, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link span {
         display: none; }
+		  
+        .post-content .post-downvote .downvote-link span {
+          display: none; }
       /* line 77, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link.not-voted:hover {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
         background: #4e555d url("/img/bg-header.png") top center; }
+		  
+        .post-content .post-downvote .downvote-link.not-voted:hover {
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          background: #4e555d url("/img/bg-header.png") top center; }
         /* line 80, ../sass/modules/_posts.scss */
         .post-content .post-upvote .upvote-link.not-voted:hover i {
           color: white;
           text-shadow: none; }
+			 
+          .post-content .post-downvote .downvote-link.not-voted:hover i {
+            color: white;
+            text-shadow: none; }
       /* line 85, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link.voted {
         cursor: default; }
+		  
+        .post-content .post-downvote .downvote-link.voted {
+          cursor: default; }
         /* line 87, ../sass/modules/_posts.scss */
         .post-content .post-upvote .upvote-link.voted i.icon-up {
           display: none; }
@@ -970,6 +1016,10 @@ border-top:1px solid #ddd !important;
         .post-content .post-upvote .upvote-link.voted i.icon-check {
           color: #7ac0e4;
           display: table-cell; }
+			 
+          .post-content .post-downvote .downvote-link.voted i.icon-check {
+            color: #7ac0e4;
+            display: table-cell; }
   /* line 97, ../sass/modules/_posts.scss */
   .post-content .post-sticky {
     display: block;
@@ -1034,8 +1084,10 @@ border-top:1px solid #ddd !important;
   
   
   .post-actions .user-avatar {
-    height: 70px;
-    width: 70px;
+    height: 53px;
+    width: 53px;
+	 position: absolute;
+	 margin-left: -63px;
     display: block;
     -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
@@ -1048,7 +1100,8 @@ border-top:1px solid #ddd !important;
   .post-actions li {
     position: relative;
     float: left;
-    margin-left: 10px; }
+	 top: 0px;
+    margin-left: 75px; }
     /* line 157, ../sass/modules/_posts.scss */
     .post-actions li a {
       background: #d8e9f5;
@@ -1056,14 +1109,14 @@ border-top:1px solid #ddd !important;
       position: relative;
       display: block;
       padding: 0;
-      width: 70px;
-      height: 70px;
+      width: 75px;
+      height: 53px;
       line-height: 70px;
       vertical-align: baseline;
       text-align: center;
       color: #b3c1c6;
-      font-size: 36px;
-      line-height: 50px; }
+      font-size: 26px;
+      line-height: 40px; }
       /* line 172, ../sass/modules/_posts.scss */
       .post-actions li a.edit-link {
         color: #f36c3d; }
@@ -1096,13 +1149,13 @@ border-top:1px solid #ddd !important;
         display: block;
         width: 100%;
         height: 20px;
-        line-height: 20px;
-        font-size: 11px; }
+        line-height: 12px;
+        font-size: 13px; }
       /* line 206, ../sass/modules/_posts.scss */
       .post-actions li a .points {
         display: block;
         font-size: 30px;
-        line-height: 50px; }
+        line-height: 0px; }
       /* line 211, ../sass/modules/_posts.scss */
       .post-actions li a .action {
         display: block;
@@ -1110,9 +1163,9 @@ border-top:1px solid #ddd !important;
         width: 100%;
         line-height: 20px;
         position: absolute;
-        bottom: 5px;
+        bottom: 0px;
         left: 0px;
-        font-size: 13px;
+        font-size: 12px;
         color: #b3c1c6;
         pointer-events: none; }
 

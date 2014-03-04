@@ -30,7 +30,7 @@ Setting = FormModel.extend({
     mixpanelId: '',
     clickyId:'',
     goSquaredId: '',
-    //embedlyId: '',
+    embedlyId: '0993fb5aee7847cf88bc7c84edf14f66',
     // bitlyToken: '',
     mailChimpAPIKey: '',
     mailChimpListId: '',

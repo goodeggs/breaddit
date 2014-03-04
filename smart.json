@@ -9,6 +9,7 @@
     "crypto-md5": {},
     "iron-router": {},
     "nprogress": {},
-    "fast-render": {}
+    "fast-render": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }
