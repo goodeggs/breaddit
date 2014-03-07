@@ -71,7 +71,7 @@ Meteor.methods({
 
     properties.commentId = newCommentId;
 
-    /*if(!this.isSimulation){
+    if(!this.isSimulation){
       if(parentCommentId){
         // child comment
         var parentComment=Comments.findOne(parentCommentId);
@@ -121,7 +121,7 @@ Meteor.methods({
           }
         }
       }
-    }*/
+    }
     return properties;
   },
   removeComment: function(commentId){
