@@ -12,12 +12,12 @@ crypto-md5
 momentjs
 standard-app-packages
 rss
-iron-router
 mailchimp
-nprogress
 telescope-i18n
 less
 accounts-password
 accounts-google
 fast-render
-accounts-ui-bootstrap-3
+iron-router-progress
+iron-router
+accounts-ui

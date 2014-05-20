@@ -37,11 +37,6 @@ Template.post_item.helpers({
     if(user)
       return getProfileUrl(user);
   },
-  
-  avatarUrl: function() {
-    return getAvatarUrl(this);
- },
-	 
   short_score: function(){
     return Math.floor(this.score*1000)/1000;
   },
@@ -51,7 +46,7 @@ Template.post_item.helpers({
     return html_body.autoLink();
   },
   ago: function(){
-    // if post is approved show submission time, else show creation time.
+    // if post is approved show submission time, else show creation time. 
     time = this.status == STATUS_APPROVED ? this.submitted : this.createdAt;
     return moment(time).fromNow();
   },
@@ -61,16 +56,9 @@ Template.post_item.helpers({
   },
   voted: function(){
     var user = Meteor.user();
-    if(!user) return false;
+    if(!user) return false; 
     return _.include(this.upvoters, user._id);
   },
-  
-  dvoted: function(){
-    var user = Meteor.user();
-    if(!user) return false;
-    return _.include(this.downvoters, user._id);
-  },
-  
   userAvatar: function(){
     var author = Meteor.users.findOne(this.userId, {reactive: false});
     if(!!author)
@@ -99,27 +87,27 @@ var recalculatePosition = function ($object, pArray) {
     // send object back to previous position
     $object.removeClass('animate').css("top", delta + "px");
     // then wait a little and animate it to new one
-    setTimeout(function() {
+    setTimeout(function() { 
       $object.addClass('animate').css("top", "0px")
-    }, 1);
+    }, 1);  
   }
 }
 
 Template.post_item.rendered = function(){
-  var instance = this,
-      $instance = $(instance.firstNode.nextSibling),
-      top = $instance.position().top;
+  // var instance = this,
+  //     $instance = $(instance.firstNode.nextSibling),
+  //     top = $instance.position().top;
 
-  // if this is the first render, initialize array, else push current position
-  if(typeof instance.pArray === 'undefined'){
-    instance.pArray = [top]
-  }else{
-    instance.pArray.push(top);
-  }
+  // // if this is the first render, initialize array, else push current position
+  // if(typeof instance.pArray === 'undefined'){
+  //   instance.pArray = [top]
+  // }else{
+  //   instance.pArray.push(top);
+  // }
 
-  // if this is *not* the first render, recalculate positions
-  if(instance.pArray.length>1)
-    recalculatePosition($instance, instance.pArray);
+  // // if this is *not* the first render, recalculate positions
+  // if(instance.pArray.length>1)
+  //   recalculatePosition($instance, instance.pArray);
 
 };
 
@@ -137,17 +125,17 @@ Template.post_item.events({
   },
   
   'click .downvote-link': function(e, instance){
-    var post = this;
-    e.preventDefault();
-    if(!Meteor.user()){
-      Router.go('/signin');
-      throwError(i18n.t("Please log in first"));
-    }
-    Meteor.call('downvotePost', post, function(error, result){
-      trackEvent("post downvoted", {'_id': post._id});
-    });
-	 
+     var post = this;
+     e.preventDefault();
+     if(!Meteor.user()){
+       Router.go('/signin');
+       throwError(i18n.t("Please log in first"));
+     }
+     Meteor.call('downvotePost', post, function(error, result){
+       trackEvent("post downvoted", {'_id': post._id});
+     });
   },
+  
   'click .share-link': function(e){
     var $this = $(e.target).parents('.post-share').find('.share-link');
     var $share = $this.parents('.post-share').find('.share-options');

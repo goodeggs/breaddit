@@ -149,7 +149,20 @@ Template.comment_item.helpers({
     var user = Meteor.users.findOne(this.userId);
     if(user)
       return getProfileUrl(user);
-  }  
+  },  
+  
+ getImage: function() {
+      var displayBase = 'http://i.embed.ly/1/display/resize';
+      var embedlyImageKey = Meteor.settings.public.embedlyImageKey;
+
+      var params = {
+        key: embedlyImageKey,
+        url: this.url,
+        width: 400
+      }
+
+      return displayBase + '?' + $.param(params)
+    }
 });
 
 Template.comment_item.events({

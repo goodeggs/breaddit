@@ -4,15 +4,12 @@
     "basePackages": {
       "momentjs": {},
       "crypto-base": {},
-      "database-forms": {
-        "git": "git://github.com/SachaG/database-forms.git",
-        "branch": "master"
-      },
       "crypto-md5": {},
       "iron-router": {},
-      "nprogress": {},
       "fast-render": {},
-      "accounts-ui-bootstrap-3": {}
+      "spin": {},
+      "autoform": {},
+      "iron-router-progress": {}
     },
     "packages": {
       "momentjs": {
@@ -25,11 +22,6 @@
         "tag": "v3.1.2.1",
         "commit": "5df8d82a0595553415bbfae2930c6ecbeece5794"
       },
-      "database-forms": {
-        "git": "git://github.com/SachaG/database-forms.git",
-        "branch": "master",
-        "commit": "b11ac7d5ca10df610ee5ca810cde45bb38ac81b7"
-      },
       "crypto-md5": {
         "git": "https://github.com/oortcloud/meteor-crypto-md5.git",
         "tag": "v3.1.2.2",
@@ -37,23 +29,48 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.4",
-        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
-      },
-      "nprogress": {
-        "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
-        "tag": "v0.0.3",
-        "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
       },
       "fast-render": {
         "git": "https://github.com/arunoda/meteor-fast-render.git",
-        "tag": "v0.1.16",
-        "commit": "e08aa22d76f25bb43e9d0f8bee3880c686f62b2b"
-      },
-      "accounts-ui-bootstrap-3": {
-        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
         "tag": "v0.2.5",
-        "commit": "91cd37a1320213dd209c3a668bf542eeb9c39a00"
+        "commit": "93e2fb334e55fbe9b5ebb2a2e65964018658f43e"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "autoform": {
+        "git": "https://github.com/aldeed/meteor-autoform.git",
+        "tag": "v0.8.1",
+        "commit": "385051a5e4bbea3b2a54965800f5f530987ef432"
+      },
+      "iron-router-progress": {
+        "git": "https://github.com/Multiply/iron-router-progress.git",
+        "tag": "v0.3.1",
+        "commit": "3f7900feb4bb70a1289b39a1fdcd1f438c0335b3"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "simple-schema": {
+        "git": "https://github.com/aldeed/meteor-simple-schema.git",
+        "tag": "v0.5.1",
+        "commit": "a29956b34d03a4591dbd0eaed9d37009ef48b8db"
+      },
+      "collection2": {
+        "git": "https://github.com/aldeed/meteor-collection2.git",
+        "tag": "v0.3.11",
+        "commit": "7e970671305657678e8508d8107d5e6c5e158559"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       }
     }
   }

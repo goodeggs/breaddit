@@ -16,9 +16,10 @@ i18next-meteor
 /iron-router
 /nprogress
 /fast-render
-/accounts-ui-bootstrap-dropdown
-/server-session
-/accounts-ui
-/accounts-ui-unstyled
-/accounts-ui-bootstrap-3
-/bootstrap-3
+/spin
+/blaze-layout
+/autoform
+/simple-schema
+/collection2
+/moment
+/iron-router-progress
