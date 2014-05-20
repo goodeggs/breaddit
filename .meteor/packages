@@ -7,7 +7,6 @@ backbone
 accounts-base
 spiderable
 email
-database-forms
 crypto-md5
 momentjs
 standard-app-packages
@@ -21,3 +20,7 @@ fast-render
 iron-router-progress
 iron-router
 accounts-ui
+database-forms
+simple-schema
+collection2
+autoform
