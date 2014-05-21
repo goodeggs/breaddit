@@ -1,12 +1,14 @@
 Template.comment_edit.rendered = function(){
-  var comment = this.data.comment;
+  if(this.data){ // XXX
+    var comment = this.data.comment;
 
-  if(comment && Meteor.user() && !this.editor){
-    this.editor = new EpicEditor(EpicEditorOptions).load();
-    this.editor.importFile('editor', comment.body);
-    $(this.editor.editor).bind('keydown', 'meta+return', function(){
-      $(window.editor).closest('form').find('input[type="submit"]').click();
-    });
+    if(comment && Meteor.user() && !this.editor){
+      this.editor = new EpicEditor(EpicEditorOptions).load();
+      this.editor.importFile('editor', comment.body);
+      $(this.editor.editor).bind('keydown', 'meta+return', function(){
+        $(window.editor).closest('form').find('input[type="submit"]').click();
+      });
+    }
   }
 }
 
@@ -36,7 +38,9 @@ Template.comment_edit.events({
     
     if(confirm(i18n.t("Are you sure?"))){
       Meteor.call('removeComment', comment._id);
-      Router.go("/comments/deleted");
+      Router.go("/posts/"+comment.post)
+      throwError("Your comment has been deleted.");
+//      Router.go("/comments/deleted");
     }
   }
 });
