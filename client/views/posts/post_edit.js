@@ -1,18 +1,4 @@
-// Template.post_edit.preserve(['#title', '#url', '#editor', '#sticky']);
-
-// Template.post_edit.preserve({
-//   // 'input[id]': function (node) { return node.id; }
-//    '[name]': function(node) { return node.getAttribute('name');}
-// });
-
-Template.post_edit.created = function(){
-  post = Posts.findOne(this.data.postId);
-}
-
 Template.post_edit.helpers({
-  post: function () {
-    return Posts.findOne(this.postId);
-  },
   created: function(){
     return moment(this.createdAt).format("MMMM Do, h:mm:ss a");
   },
@@ -32,8 +18,8 @@ Template.post_edit.helpers({
   isSticky: function(){
     return this.sticky ? 'checked' : '';
   },
-  isSelected: function(){
-    return post && this._id == post.userId ? 'selected' : '';
+  isSelected: function(parentPost){
+    return parentPost && this._id == parentPost.userId ? 'selected' : '';
   },
   submittedDate: function(){
     return moment(this.submitted).format("MM/DD/YYYY");
@@ -62,16 +48,16 @@ Template.post_edit.helpers({
 });
 
 Template.post_edit.rendered = function(){
+  var post = this.data.post;
   if(post && !this.editor){
-
     this.editor= new EpicEditor(EpicEditorOptions).load();
-    this.editor.importFile('editor',post.body);
+    this.editor.importFile('editor', post.body);
 
     $('#submitted_date').datepicker();
 
   }
 
-  $("#postUser").selectToAutocomplete();
+  // $("#postUser").selectToAutocomplete(); // XXX
 
 }
 
@@ -141,12 +127,13 @@ Template.post_edit.events({
     e.preventDefault();
     
     if(confirm("Are you sure?")){
+      Router.go("/");
       Meteor.call("deletePostById", post._id, function(error) {
         if (error) {
           console.log(error);
           throwError(error.reason);
         } else {
-          Router.go("/posts/deleted");
+          throwError('Your post has been deleted.');
         }
       });
     }
