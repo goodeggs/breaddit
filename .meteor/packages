@@ -19,8 +19,8 @@ accounts-google
 fast-render
 iron-router-progress
 iron-router
-accounts-ui
 database-forms
 simple-schema
 collection2
 autoform
+accounts-ui

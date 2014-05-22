@@ -24,7 +24,7 @@ Accounts.onCreateUser(function(options, user){
   // set notifications default preferences
   user.profile.notifications = {
     users: false,
-    posts: false,
+    posts: true,
     comments: true,
     replies: true
   };
