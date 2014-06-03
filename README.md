@@ -18,7 +18,7 @@ Open-source, real-time social news site built with [Meteor](http://meteor.com)
 
 
 # First Run
-- Fill in your Google keys (by clicking on "Sign Up/Sign in" in your Telescope top bar)
+- Fill in your Google keys (by clicking on "Sign Up/Sign in" in your breaddit top bar)
 - The first user account created will automatically be made admin
 - Check out the settings page and fill out basic things like the site's name
 
