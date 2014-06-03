@@ -23,3 +23,5 @@ i18next-meteor
 /collection2
 /moment
 /iron-router-progress
+/bootstrap-3
+/accounts-ui-bootstrap-3-blaze
