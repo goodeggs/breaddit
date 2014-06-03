@@ -1,7 +1,7 @@
 Open-source, real-time social news site built with [Meteor](http://meteor.com)
 
 # Features
-- Real-time (of course!)
+- Real-time 
 - Password-based and/or Google auth
 - Notifications
 - Mobile-ready & responsive
@@ -12,7 +12,7 @@ Open-source, real-time social news site built with [Meteor](http://meteor.com)
 # Installation
 - Install [Meteor](http://meteor.com)
 - Install [Meteorite](https://github.com/oortcloud/meteorite/)
-- Download or clone Tele into /some/path
+- Download or clone breaddit into /some/path
 - cd /some/path
 - Run `mrt`
 
