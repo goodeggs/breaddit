@@ -18,6 +18,6 @@ Template.post_page.rendered = function(){
     Session.set('scrollToCommentId', null);
     this.rendered=true;
   }
-  if(this.data) // XXX
-    document.title = this.data.headline;
+  if(this.data || !this.data) // XXX
+    document.title = "breaddit";
 }
