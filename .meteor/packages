@@ -23,3 +23,6 @@ simple-schema
 collection2
 autoform
 accounts-ui
+telescope-tags
+telescope-base
+telescope-lib
